@@ -3,6 +3,4 @@ version: '3.9'
 services:
   web_prod:
     build: .
-    volumes:
-      - ./build:/usr/app/build
     container_name: 'web_prod'

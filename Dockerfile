@@ -8,4 +8,4 @@ RUN npm install --silent --no-cache --registry=https://registry.npm.taobao.org
 
 COPY  ./ ./
 
-CMD ["npm", "run", "build"]
+RUN npm run build && mv /usr/app/build/* /usr/src && rm -rf /usr/app
